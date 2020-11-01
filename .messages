@@ -1,0 +1,10 @@
+REQUIRED_FIELD=Campo obrigatório.
+INVALID_AGENCY_OR_ACCOUNT_DEPOSIT=Não foi possível encontrar a conta ou agência para depósito.
+INVALID_AGENCY_OR_ACCOUNT=Não foi possível encontrar a conta ou agência.
+INVALID_ORIGIN_ACCOUNT=Não foi possível encontrar a conta de origem.
+INVALID_DESTINATE_ACCOUNT=Não foi possível encontrar a conta de destino.
+INVALID_AGENCY=Não foi possível encontrar a agência.
+INVALID_QTY=É necessário informar uma quantidade válida.
+INVALID_ORIGIN_AGENCY_TO_PRIVATE_AGENCY=Você não pode transferir uma conta para a mesma agência.
+NOT_DATA=Não há dados para serem exibidos.
+INSUFICIENT_BALANCE=Saldo Insuficiente.
