@@ -44,7 +44,7 @@ export const withdrawCash = async (req, res, next) => {
     if (account.balance + withdawValue < 0) {
       throw new Error(process.env.INSUFICIENT_BALANCE);
     }
-    const balance = account.balance + withdawValue;
+    const balance = account.balance + withdawValue -1;
     const response = await accountModel.findOneAndUpdate(
       {
         agencia,
@@ -84,7 +84,7 @@ export const removeAccount = async (req, res, next) => {
     if (!data.n) {
       throw new Error(process.env.INVALID_AGENCY_OR_ACCOUNT);
     }
-    const accounts = await accountModel.find({});
+    const accounts = await accountModel.find({agencia});
     const count = await accountModel.countDocuments({ agencia });
     logger.info(
       `DELETE /accounts/?agencia=${agencia}&conta=${conta} ${JSON.stringify(
